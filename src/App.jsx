@@ -37,6 +37,7 @@ const App = () => {
         answer={getItem(cardShownId).answer}
         flipped={flipped}
         handleCardClick={handleCardClick}
+        difficulty={getItem(cardShownId).difficulty}
       />
       <button onClick={handlePreviousClick}>{"<"}</button>
       <button onClick={handleNextClick}>{">"}</button>
