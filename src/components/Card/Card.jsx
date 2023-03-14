@@ -1,10 +1,11 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({ question, answer, flipped, handleCardClick }) => {
+const Card = ({ question, answer, flipped, handleCardClick, isClickable }) => {
   return (
-    <div
+    <button
       className={`card ${flipped ? "flipped" : ""}`}
+      disabled={!isClickable}
       onClick={handleCardClick}
     >
       {flipped ? (
@@ -12,7 +13,7 @@ const Card = ({ question, answer, flipped, handleCardClick }) => {
       ) : (
         <div className="card-front">{question}</div>
       )}
-    </div>
+    </button>
   );
 };
 

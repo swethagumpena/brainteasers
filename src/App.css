@@ -29,8 +29,38 @@ body {
   line-height: 1.2;
 }
 
-button {
+.navigate-button {
   color: black;
   background-color: rgb(238, 227, 227) !important;
   margin: 0.5rem;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.submit {
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.border-grey {
+  border: 2px solid rgb(133, 133, 133);
+}
+
+.border-green {
+  border: 2px solid green;
+}
+
+.border-red {
+  border: 2px solid red;
 }
